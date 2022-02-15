@@ -11,7 +11,7 @@ form.addEventListener("submit", function (event) {
     oReq.open("POST", "https://api.openai.com/v1/engines/text-davinci-001/completions", true);
     oReq.setRequestHeader("Authorization", "Bearer " + openAIkey);
     oReq.setRequestHeader("Content-Type", "application/json");
-    req.onload  = function() {
+    oReq.onload  = function() {
         var jsonResponse = req.response;
         alert(jsonResponse["error"])
      };
