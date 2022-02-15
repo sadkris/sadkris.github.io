@@ -1,12 +1,11 @@
 const form = document.getElementById('userInput');
+const button = document.getElementById('submitButton');
 const openAIkey = "";
 
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
+button.addEventListener("click", function () {
     const userInput = form['aiText'];
 
-    alert("holy fuck it worked")
+    alert("holy fuck it worked");
 
     var oReq = new XMLHttpRequest();
     oReq.responseType = 'json';
