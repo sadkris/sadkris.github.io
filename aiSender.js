@@ -6,6 +6,8 @@ form.addEventListener("submit", function (event) {
 
     const userInput = form['aiText'];
 
+    alert("holy fuck it worked")
+
     var oReq = new XMLHttpRequest();
     oReq.responseType = 'json';
     oReq.open("POST", "https://api.openai.com/v1/engines/text-davinci-001/completions", true);
